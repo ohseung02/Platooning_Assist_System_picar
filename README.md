@@ -85,24 +85,6 @@ flowchart LR
 
 | Path | Description |
 |---|---|
-| `src/Platooning_System/` | Main code: driving loop, lane detection (`processor.py`), motor control |
 | `libs/adeept_picar-b2/` | PiCar-B hardware driver and setup script |
 | `docs/` | Poster, report, slides, demo images |
 | `media/` | Demo videos |
-
----
-
-## How to Run
-
-```bash
-# 1. Install packages
-pip3 install adafruit-circuitpython-pca9685 adafruit-circuitpython-motor adafruit-circuitpython-servokit flask opencv-python numpy torch torchvision
-
-# 2. Set up the hardware driver
-cd libs/adeept_picar-b2
-sudo python3 setup.py
-
-# 3. Run
-cd ../../src/Platooning_System
-python3 Platooning_System.py
-```
